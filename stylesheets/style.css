@@ -553,7 +553,7 @@ body, select, input, textarea {
 
 /* line 16, ../sass/partials/_page.sass */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: \5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 /* line 26, ../sass/partials/_page.sass */
@@ -1273,7 +1273,7 @@ h1.title {
 
 /* line 364, ../sass/partials/_page.sass */
 #footer {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: \5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
