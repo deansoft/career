@@ -1,0 +1,371 @@
+
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body, select, input, textarea
+  color: $font-color
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+#container
+
+header
+
+#main
+
+footer
+
+#navigation-menu
+  position: fixed
+  width: 100%
+  z-index: 10000
+  background: rgba(255,255,255,0.3)
+  li
+    +inline-block()
+    margin-right: 1em
+    &:last-child
+      a
+        color: #fff
+      background: #ff7e70
+      padding: 5px
+      border-radius: 3px
+    a
+      text-decoration: none
+      color: #000
+
+#video-bg
+  position: fixed
+  top: 0
+  width: 100%
+  +background(url(../images/bg.jpg))
+  +background-size(cover)
+  background-color: #ccc
+  overflow: hidden
+
+  .down-arrow
+    position: absolute
+    left: 50%
+    bottom: -41px
+    margin-left: -41px
+    width: 82px
+    height: 82px
+    border-radius: 100%
+    background: #333
+    color: #fff
+    line-height: 41px
+    text-align: center
+    font-size: 2em
+    // +box-shadow(0 0 25px rgba(251,154,0,1))
+    +animation(flash 1s ease infinite alternate)
+    
+  .title
+    position: absolute
+    left: 10%
+    top: 100px
+    font-size: 1em
+    background: rgba(0,0,0,0.3)
+    color: #f1f1f1
+    padding: 1em
+    .brand
+      font-size: 3em
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+      font-weight: 300
+    .want
+      font-size: 1.5em
+      font-family: 'Ubuntu Mono', "Lucida Grande", sans-serif, Arial
+    .what
+      font-size: 1.5em
+      font-family: 'Ubuntu Mono', "Lucida Grande", sans-serif, Arial
+    +at-breakpoint($small)
+      .brand
+        font-size: 5em
+      .want
+        font-size: 3em
+      .what
+        font-size: 3em
+    +at-breakpoint($medium)
+      padding: 2em
+      .brand
+        font-size: 7em
+      .want
+        font-size: 5em
+      .what
+        font-size: 5em
+
+#video
+  position: fixed
+  +filter(grayscale(50%))
+
+.content
+  position: relative
+  z-index: 1
+  background: #ccc
+  .intro-past-wrapper
+    background: #fff
+  .intro-now-wrapper
+    background: #5DD06A
+
+.container
+  +container
+  // +susy-grid-background
+
+.intro-past-wrapper, .intro-now-wrapper
+  +span-columns(12)
+
+.article-content
+  padding-left: 1em
+  line-height: 1.5em
+  strong
+    font-weight: bold
+    font-size: 1.2em
+.slogan-content
+  line-height: 1.5em
+  strong
+    font-size: 24px
+    line-height: 1.5em
+
+.intro-past
+  +span-columns(12)
+  +at-breakpoint($medium)
+    +span-columns(6)
+  +box-sizing(border-box)
+  padding: 2em
+
+.intro-products
+  background: #00C0F7
+  .title-wrapper
+    +span-columns(12)
+    +box-sizing(border-box)
+    padding-top: 2em
+    padding-left: 2em
+  .wesing-img, .sns-img
+    display: block
+    width: 280px
+    height: 280px
+    +background(url(../images/wesing.png))
+    +background-size(cover)
+    margin: 0 auto
+  .sns-img
+    width: 240px
+    height: 240px
+    +background(url(../images/sns.png))
+    +background-size(cover)
+    border-radius: 20%
+
+.intro-sns, .intro-wesing
+  +span-columns(12)
+  +at-breakpoint($medium)
+    +span-columns(6)
+  +box-sizing(border-box)
+  padding: 2em
+  p
+    margin-bottom: 2em
+.intro-wesing
+  +at-breakpoint($medium)
+    +span-columns(6 omega)
+
+.intro-team, .intro-plan-marketing, .apply-form-wrapper
+  +span-columns(12)
+  +box-sizing(border-box)
+  padding: 2em
+.intro-slogan
+  +span-columns(12)
+  +box-sizing(border-box)
+  padding: 2em
+  text-align: center
+
+.intro-past-img
+  +span-columns(12)
+  +at-breakpoint($medium)
+    +span-columns(6 omega)
+  min-height: 300px
+  position: relative
+
+#bd1
+  position: absolute
+  right: 10%
+  top: 30px
+
+#vs2
+  position: absolute
+  top: 100px
+  left: 10%
+
+#mds655
+  position: absolute
+  top: 180px
+  right: 10%
+
+.location-wrapper
+  +span-columns(12)
+  background: #fff
+  .title-wrapper
+    +span-columns(12)
+    +box-sizing(border-box)
+    padding: 2em
+  .map-wrapper
+    +span-columns(12)
+    margin-bottom: 50px
+#map_canvas
+  width: 80%
+  height: 400px
+  background: #ccc
+  margin: 0 auto
+
+.plan-marketing
+  background: #C0C4CE
+.front-end
+  background: #C5CAD4
+
+.will-learn
+  +span-columns(12)
+.work-detail, .work-apply
+  background: #EC5E21
+
+h1.title
+  text-align: center
+.training-title
+  +span-columns(12)
+  text-align: center
+.training-wrapper
+  +span-columns(12)
+  +at-breakpoint($medium)
+    +span-columns(6)
+    &:nth-child(2n)
+      +span-columns(6 omega)
+  +at-breakpoint($large)
+    +span-columns(4)
+    &:nth-child(2n)
+      +span-columns(4)
+    &:nth-child(3n)
+      +span-columns(4 omega)
+  +box-sizing(border-box)
+  padding: 1em 3em
+  .training-subtitle
+    text-align: center
+    margin-top: 1em
+    font-size: 1.5em
+  .training
+    position: relative
+    &:hover
+      .front
+        z-index: 900
+        +rotateY(180deg)
+      .back
+        z-index: 1000
+        +rotateX(0deg)
+        +rotateY(0deg)
+  .front, .back
+    z-index: 900
+    width: 100%
+    padding-top: 100%
+    background: #333
+    border-radius: 100%
+    +backface-visibility(hidden)
+    +rotateX(0deg)
+    +rotateY(0deg)
+    +transform-style(preserve-3d)
+    +transition(all .4s ease-in-out)
+    &.thinking
+      +background(url(../images/thinking.jpg))
+      +background-size(cover)
+    &.browser
+      +background(url(../images/browser.png))
+      background-color: #333
+      +background-size(60%)
+      background-repeat: no-repeat
+      background-position: 50% 50%
+    &.wireframe
+      +background(url(../images/wireframe.jpg))
+      +background-size(cover)
+    &.git
+      +background(url(../images/Octocat.png))
+      background-color: #fff
+      +background-size(90%)
+      background-repeat: no-repeat
+      background-position: 50% 50%
+    &.angular
+      +background(url(../images/AngularJS.png))
+      background-color: #fff
+      +background-size(70%)
+      background-repeat: no-repeat
+      background-position: 50% 50%
+    &.code
+      +background(url(../images/code.png))
+      +background-size(cover)
+    &.laravel
+      +background(url(../images/laravel.png))
+      +background-size(100%)
+      background-position: 50% 50%
+    &.aws
+      +background(url(../images/aws.png))
+      +background-size(cover)
+    &.mongo
+      +background(url(../images/mongo.png))
+      +background-size(cover)
+  .back
+    z-index: 1000
+    +backface-visibility(hidden)
+    +rotateY(-180deg)
+    +transform-style(preserve-3d)
+    +transition(all .4s ease-in-out)
+    position: absolute
+    top: 0
+    left: 0
+    color: #fff
+    &.first
+      background: #ff7e70
+    &.second
+      background: #51ADF0
+    &.third
+      background: #5DD06A
+
+  .back-content
+    position: absolute
+    top: 50%
+    margin-top: -50px
+    +box-sizing(border-box)
+    padding: 2em
+
+.ss-form
+  +box-sizing(border-box)
+  input
+    width: 100%
+    height: 24px
+  textarea
+    width: 100%
+  .ss-form-entry
+    margin-bottom: 1em
+  .required-message
+    font-size: 12px
+    margin-top: 5px
+#ss-submit
+  font-size: 1.5em
+  width: 200px
+  height: 40px
+  background: #5DD06A
+  border: 0
+  border-radius: 3px
+  color: #f1f1f1
+  +box-shadow(inset 0px -5px 0px darken(#5DD06A, 10%))
+  &:hover
+    +translateY(2px)
+    +box-shadow(inset 0px -3px 0px darken(#5DD06A, 10%))
+
+#footer
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  text-align: center
+  +box-sizing(border-box)
+  padding: 1em 0
+  color: #f1f1f1
+  background: #20273c
+  a
+    color: #fff

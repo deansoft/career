@@ -1,0 +1,19 @@
+@mixin animation($content)
+  @include experimental(animation, $content, -webkit, -moz, not -o, not -ms, official)
+
+@mixin keyframe($animation_name)
+  @-webkit-keyframes #{$animation_name}
+    @content
+  @-moz-keyframes #{$animation_name}
+    @content
+  @-o-keyframes #{$animation_name}
+    @content
+  @keyframes #{$animation_name}
+    @content
+
+
++keyframe(flash)
+  from
+    +box-shadow(0 0 25px rgba(51,51,51,0.3))
+  to
+    +box-shadow(0 0 25px rgba(51,51,51,1))
