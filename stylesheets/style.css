@@ -1246,7 +1246,7 @@ h1.title {
   box-sizing: border-box;
 }
 /* line 351, ../sass/partials/_page.sass */
-.ss-form input {
+.ss-form input[type="text"] {
   width: 100%;
   height: 24px;
 }
@@ -1265,6 +1265,11 @@ h1.title {
 }
 
 /* line 361, ../sass/partials/_page.sass */
+.ss-choice-item {
+  list-style: none;
+}
+
+/* line 363, ../sass/partials/_page.sass */
 #ss-submit {
   font-family: \5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.5em;
@@ -1278,7 +1283,7 @@ h1.title {
   -moz-box-shadow: inset 0px -5px 0px #38c248;
   box-shadow: inset 0px -5px 0px #38c248;
 }
-/* line 371, ../sass/partials/_page.sass */
+/* line 373, ../sass/partials/_page.sass */
 #ss-submit:hover {
   -webkit-transform: translateY(2px);
   -moz-transform: translateY(2px);
@@ -1290,7 +1295,7 @@ h1.title {
   box-shadow: inset 0px -3px 0px #38c248;
 }
 
-/* line 375, ../sass/partials/_page.sass */
+/* line 377, ../sass/partials/_page.sass */
 #footer {
   font-family: \5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
@@ -1301,7 +1306,7 @@ h1.title {
   color: #f1f1f1;
   background: #20273c;
 }
-/* line 382, ../sass/partials/_page.sass */
+/* line 384, ../sass/partials/_page.sass */
 #footer a {
   color: white;
 }
