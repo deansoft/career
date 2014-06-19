@@ -1310,3 +1310,21 @@ h1.title {
 #footer a {
   color: white;
 }
+
+/* line 386, ../sass/partials/_page.sass */
+.intro-time {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2em;
+}
+/* line 389, ../sass/partials/_page.sass */
+.intro-time li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  min-width: 240px;
+}
